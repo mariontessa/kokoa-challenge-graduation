@@ -1,0 +1,45 @@
+.fa-message  {
+    margin-left: 10px;
+  }
+  
+  /* .profile-message h5{
+      margin-bottom: 5px;
+  }
+  .profile-message .time-in-chat {
+    color: rgba(0,0,0,0.5);
+  }
+  .user-component-column .text-message-number {
+    background-color:  #11274d;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    
+  }
+  .user-component-text {
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 3px 5px 6px 0.5px rgba(130, 166, 212, 0.6);
+    border-radius: 1px
+    
+  }
+  .user-component-text:hover {
+    /* animation: grow 6s infinite; */
+    /* border-radius: 9px;
+    box-shadow: 3px 5px 6px 0.5px rgba(7, 7, 7, 0.767);
+    background-color: rgb(245, 241, 235); */ 
+
+  
+  /* @keyframes grow {
+    0%,100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.02);
+  }
+  } */
+
+  

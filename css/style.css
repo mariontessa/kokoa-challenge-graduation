@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "reset.css";
+
+/* componets */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "screens/index.css";
+@import "screens/Friends.css";
+@import 'screens/chat.css';
+@import 'screens/find.css';
+@import 'screens/more.css';
+@import 'screens/settings.css';
+@import 'components/no-mobile.css';
+
+body {
+  font-family: "nunito", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 8px;
+}
+.page-tittle-settings {
+  display: flex;
+  justify-content: space-between;
+}
+#chat-screen-personal{
+  background-color: #4b689b;
+  height: 500vh;
+}
+#chat-screen-personal .page-tittle-settings,
+#chat-screen-personal.status-bar {
+  position: fixed;
+  width:100% ;
+  box-sizing: border-box;
+  background-color: #4b689b;
+  top: 0;
+}
+#chat-screen-personal .page-tittle-settings {
+  top: 40px;
+  z-index: 1; 
+} 
+@keyframes fadein {
+  from{
+    transform: translateY(30px);
+    opacity: 0;  
+  }
+  to {
+      transform: none;
+      opacity:1;
+  }
+}
+.main-chat-space {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 1s linear;
+}
+#chat-screen-personal .status-bar {
+  z-index:2 ;
+}
+.chat-time{
+  color: white;
+  background-color:#92a4b2;
+  padding: 15px;
+  border-radius:25px; 
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.message-row-chat {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row-chat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+.message-author-sender {
+  margin-bottom: 8px;
+  display: block;
+}
+@keyframes fadeinleft {
+  from {
+      transform: translateX(-40px);
+  }
+  to{
+      transform: none;
+  }
+}
+.message-bubble-sender {
+  background-color: white;
+  font-size: 18px;
+  padding: 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  animation: fadeinleft 1s linear;
+
+}
+.message-info-sender,
+.message-info-receiver {
+  display:flex;
+  align-items: flex-end;
+}
+/* message-info is a flex container, */
+
+.message-time-sender,
+.message-author-sender {
+  opacity: 0.8;
+  font-size: 14px;
+}
+.message-row--own-sender {
+  justify-content: flex-end;
+}
+@keyframes fadeinright {
+  from{
+    transform: translateX(40px);
+  }
+  to{
+    transform: none
+  }
+}
+.message-row--sender .message-bubble-receiver {
+  background-color: #11274d;
+  border-radius:15px;
+  border-top-right-radius: 0px;
+  padding: 13px;
+  
+  animation: fadeinright 1s linear ;
+}
+.message-row--sender .message-time-receiver {
+  margin-left: 250px;
+}
+
+.message-row--sender .message-info-receiver {
+  flex-direction: row-reverse;
+}
+.reply-sender {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+
+  /* we put the border-bow when items seems to be pushed outside */
+
+}
+/* by default a column has no width , thats why the two column were given width */
+.reply-sender .reply-column-sender:first-child {
+  width: 10%;
+}
+.reply-sender .reply-column-sender:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply-sender input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.reply-column-sender:last-child > i,
+.reply-column-sender:last-child button {
+  position:absolute;
+  right: 3.5px;
+  top: 2px;
+}
+.reply-column-sender:last-child > i {
+  right: 35px;
+  top: 8px;
+}
+.reply-column-sender button {
+  background-color: #13294B;
+  border: none;
+  width: 20px;
+  height: 3px;
+  border-radius: 50%;
+
+}
+.reply-column-sender button i {
+  opacity: 1;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply-column-sender button:focus,
+.reply-column-sender button:active {
+  outline: none;
+}
+.reply-sender:focus-within .reply-column-sender:first-child,   
+.reply-sender:focus-within .fa-face-smile,
+.reply-sender:focus-within button {
+  opacity: 1;
+}
+.reply-sender .reply-column-sender:first-child,
+.reply-sender .fa-face-smile,
+.reply button {
+  transition: opacity 1 ease-in-out;
+}
+.reply-sender:focus-within input {
+  width: 95vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+.reply-sender:focus-within {
+  transform: translateY(80px);
+}
+

@@ -1,0 +1,102 @@
+.user-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .user-component:hover {
+    border-radius: 9px;
+    box-shadow: 3px 5px 6px 0.5px rgba(7, 7, 7, 0.767);
+    background-color: rgb(245, 241, 235)
+  }
+  .user-component-column:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user-component-text {
+    margin-left: 10px;
+  }
+  .user-component-text h5 {
+    font-weight: bold;
+  }
+  .user-component-text h6 {
+    color: rgba(0,0,0,0.5);
+  }
+  .user-component-subtitle .fa-circle-info {
+    margin-left: 5px;
+    color: red;
+  }
+  .user-component-column .text-message-number {
+    width: 15px;
+    height: 15px;
+    background-color: #11274d;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    margin-right:10px ;
+  }
+  
+  .user-component-column:first-child img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+  }
+  .icon-galaxy-more {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-row-icon-galaxy,
+  .second-row-icon-galaxy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+  }
+  .main-channel-more {
+    margin-top: 20px;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+  }
+  .second-row-icon-galaxy {
+    justify-content: flex-start;
+  }
+  .second-row-icon-galaxy .icon-space:last-child {
+    margin-left: 50px;
+  }
+  .suggestion-channels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 40px;
+  }
+  .suggestion-channels-img {
+    text-align: center;
+    cursor: pointer;
+  }
+  .suggestion-channels-img:hover {
+    color:#11274d ;
+  }
+  .suggestion-channels-img img:hover {
+    animation: grow 6s infinite;
+  }
+  @keyframes grow {
+    0%,100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  .suggestion-channels-img img{
+    width: 65px;
+    height: 70px;
+    border-radius: 15%;
+    margin-bottom:10px ;
+  }
+  .suggestion-channels-img h5 {
+    font-weight: bolder;
+  }
+  

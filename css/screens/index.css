@@ -1,0 +1,46 @@
+.intro {
+    margin-top: 95px;
+    text-align: center;
+}
+.intro-heading {
+    font-size: 27px;
+    font-weight: 650;
+}
+.intro-paragraph {
+    font-size: 20px;
+    opacity: 0.5;
+    font-weight: normal;
+    padding: 0px 80px;
+}
+.log-in-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 26px;
+    margin-top:72px ;
+}
+input {
+    padding: 25px 0px;
+    font-size: 21px;
+    opacity: 0.7;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.log-in {
+    margin-top: 38px;
+    border: none;
+}
+button {
+    padding: 18px 0px;
+    font-size: 20px;
+}
+.sign-up {
+    margin-top: 15px;
+    border: none;
+    margin-bottom:26px ;
+}
+a {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.9);
+    font-weight: bold;
+}
