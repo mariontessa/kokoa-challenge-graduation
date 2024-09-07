@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    box-sizing: border-box;
+    width: 98%;
 }
 .status-bar-column:first-child {
     font-weight: 700;

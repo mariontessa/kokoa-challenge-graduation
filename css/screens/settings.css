@@ -25,6 +25,10 @@
     cursor: pointer;
   }
   .page-tittle-settings {
-   
+    margin:25px  0px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    text-align: center;
   }
   

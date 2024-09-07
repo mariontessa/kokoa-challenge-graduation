@@ -69,8 +69,11 @@
     margin-bottom: 14px;
 }
 .page-tittle-icons .fa-music {
-   margin: 0px 10px; 
+   margin: 0px 15px; 
    cursor: pointer;
+}
+.page-tittle-icons .fa-magnifying-glass {
+    cursor: pointer;
 }
 .main-channel {
     margin-top: 20px;

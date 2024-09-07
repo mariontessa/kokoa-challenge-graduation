@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
   }
   .user-component:hover {
     border-radius: 9px;
@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+  }
+  .user-component-column:last-child {
+    padding: 5px;
   }
   .user-component-text {
     margin-left: 10px;
@@ -98,5 +102,12 @@
   }
   .suggestion-channels-img h5 {
     font-weight: bolder;
+  }
+  .page-tittle {
+    margin-top: 40px;
+  }
+  .page-tittle-icons .fa-message  {
+    margin-left:15px ;
+    cursor: pointer;
   }
   
